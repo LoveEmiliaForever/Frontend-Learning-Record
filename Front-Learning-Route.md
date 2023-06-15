@@ -25,6 +25,7 @@
 * [菜鸟教程：HTML](https://www.runoob.com/html/html-tutorial.html)
 * **WebSocket**
 * **Canvas**
+  * 《HTML5 canvas基础教程》
 
 ### CSS知识
 * 《CSS权威指南》
