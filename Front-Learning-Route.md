@@ -1,7 +1,11 @@
 # 前端技术要求
 ### 重要理论储备
 * **计算机网络原理**
+* 《计算机网络：自顶向下方法》
+* 《TCP/IP 网络编程》
 * **浏览器原理**
+* [《浏览器的工作原理：现代网络浏览器幕后揭秘》个人图书馆](http://www.360doc.com/content/19/0505/09/20638780_833442161.shtml)
+* [《浏览器的工作原理：现代网络浏览器幕后揭秘》CSDN](https://blog.csdn.net/henrypt/article/details/60580080)
 * **软件工程**
 * **设计模式**
   * 《JavaScript 设计模式与开发实践》
@@ -30,9 +34,12 @@
 * [火狐开发者网站：CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
 * [菜鸟教程：CSS](https://www.runoob.com/css/css-tutorial.html)
 #### LESS
-* CSS预处理语言
+> CSS预处理语言
+* [LESS官方文档](https://lesscss.org)
 #### SASS
-* CSS扩展语言
+> CSS扩展语言
+* [SASS官方文档](https://sass-lang.com/guide)
+* [SASS中文文档](https://www.sass.hk)
 ### CSS框架
 #### Tailwind
 * 流行的CSS响应式框架
