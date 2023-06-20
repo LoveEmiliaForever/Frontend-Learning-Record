@@ -1,4 +1,4 @@
-# Git的基本操作流程
+# Git的基本操作
 
 ## 前期准备
 * 注册`github`账号并创建一个`repositoriy`名为`Frontend-Learning-Record`
@@ -23,9 +23,9 @@ git config --global user.email "My-Email"
 ```git
 git add Git学习笔记.md
 ```
-* 使用`git reset HEAD -- filename`从缓存区删除文件
+* 使用`git reset HEAD filename`从缓存区删除文件
 ```git
-git reset HEAD -- Git学习笔记.md
+git reset HEAD Git学习笔记.md
 ```
 
 ## 查看距上次提交后文件的变化情况（缓存区对比已提交）
@@ -86,6 +86,25 @@ git config --global core.quotepath false
 > 不能删除所处分支、需要切换到主分支再删除
 * `git checkout -b newBranch`
 > 创建并切换到 newBranch 分支
+
+## 分支合并与冲突解决
+* `git merge newBranch`
+> 将 newBranch 分支合并到现在所处分支
+> ```git
+> git branch   
+>  * main
+>    newBranch
+> git merge newBranch
+> git branch -d newBranch
+> git branch
+>  * main
+> ```
+> newBranch分支合并到了main，然后我们删掉了newBranch
+* **合并冲突解决**
+> 两个分支对同一个文件做出了不同的修改后进行合并会产生冲突
+> 具体可以使用`git status`查看哪个文件有冲突`显示为 both modified`
+> 对冲突文件要进行手动处理，git会给冲突部分添加特殊符号标记
+> 处理完冲突后进行`git commit -m`即可
 
 ## 上传操作
 * `git commit -m "additional message"`
