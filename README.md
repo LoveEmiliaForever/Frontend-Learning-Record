@@ -38,7 +38,8 @@
 > * 支持多种语言（因为本质是编辑器）
 
 ### VS-Code 配置
-#### 配置 Python
+* [VS-Code 常用配置](./常用生产工具/VS-Code/VS-Code-常用配置.md)
+* [Python 开发环境配置](./常用生产工具/VS-Code/VS-Code-Python配置.md)
 #### 配置 HTML、CSS、JavaScript
 #### 配置 C、C++、C#
 #### 配置 Java
