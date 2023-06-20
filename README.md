@@ -24,10 +24,6 @@
 ## 实用前端学习路线/汇总
 * [前端学习汇总（技术、书籍与文档推荐）](./Front-Learning-Route.md)
 
-## Git 的学习历程
-### 初识 Git
-* [Git的基本操作流程](./Git/Git的基本操作流程.md)
-
 ## VS-Code 编辑器学习历程
 ### VS-Code 简介
 > Visual Studio Code 是一个由微软开发的，同时支持`Windows、Linux和macOS`系统且开放源代码的代码编辑器。它支持`测试`，并`内置了Git` 版本控制功能。同时也具有`开发环境功能`，例如代码补全（类似于 IntelliSense）、代码片段和代码重构等。该编辑器支持用户`个人化配置`，例如改变主题颜色、键盘快捷方式等各种属性和参数，还在编辑器中内置了扩展程序管理的功能
@@ -38,8 +34,9 @@
 > * 支持多种语言（因为本质是编辑器）
 
 ### VS-Code 配置
-* [VS-Code 常用配置](./常用生产工具/VS-Code/VS-Code-常用配置.md)
+* [VS-Code 通用配置](./常用生产工具/VS-Code/VS-Code-常用配置.md)
 * [Python 开发环境配置](./常用生产工具/VS-Code/VS-Code-Python配置.md)
+* [HTML-CSS-JS 开发环境配置](./常用生产工具/VS-Code/VS-Code-HTML-CSS-JS配置.md)
 #### 配置 HTML、CSS、JavaScript
 #### 配置 C、C++、C#
 #### 配置 Java
