@@ -1,6 +1,7 @@
 # 前端三剑客开发环境配置
 
 ## HTML开发环境搭建
+
 * `Auto Close Tag`自动闭合HTML标签
 * `Auto Rename Tag`自动完成两侧标签同步修改
 * `HTML Snippets`HTML代码提示补全
@@ -8,10 +9,12 @@
 * `Live Server`实时刷新的内置浏览器
 
 ## CSS开发环境搭建
+
 * `HTML CSS Support`智能提示CSS类名和id
 * `CSS Peek`查看CSS的定义
 
 ## JS开发环境搭建
+
 * `Prettier - Code formatter`格式化代码
 * `JavaScript(ES6) code snippets`JS、TS、HTML、Vue代码提示补全
 * `EsLint`JS语法纠错
