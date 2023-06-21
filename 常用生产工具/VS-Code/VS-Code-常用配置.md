@@ -10,6 +10,7 @@
 ### 编程强化
 
 * `Bracket Pair Colorizer`给嵌套括号加上不同颜色
+* `indent-rainbow`给缩进加上不同颜色
 * `Path Intellisense`智能路径提示
 * `Code Spell Check`英语拼写检测
 * `Image preview`预览图片
@@ -77,7 +78,7 @@
   > 并往里面添加一条路径`你安装 VS Code 的路径\Microsoft VS Code\bin`
 * 添加注册表信息以配置右键菜单
   > 创建一个`添加 VS Code 右键菜单.reg`文件，并将下列命令写入保存后运行该文件
-  > 注意修改下列命令中的`Code.exe`路径
+  > **注意修改下列命令中的`Code.exe`路径**
   >
   > ```reg
   > Windows Registry Editor Version 5.00

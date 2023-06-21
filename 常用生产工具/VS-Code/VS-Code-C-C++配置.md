@@ -6,6 +6,14 @@
   * [下载MSYS2的installer](https://www.msys2.org/)
   * 安装MSYS2注意**路径内不能有除英文、数字、路径符号外的其它字符**
   * 安装时要关闭VPN等工具以免影响数据库更新
+
+  > 如果卡在更新数据库步骤超过15分钟，可以尝试以下步骤
+  >
+  > * 退出安装程序
+  > * 重启电脑
+  > * 彻底删除安装路径的文件
+  > * 重新运行安装程序
+
 * 使用以下命令安装编译、调试工具
 
   ```cmd
@@ -29,6 +37,21 @@
 * 确认无误后将它安装即可
 
 ## 3. 运行、调试C/C++文件
+
+* Hello-World.cpp（文件路径不要包含中文）
+
+  ```cpp
+    #include <bits/stdc++.h>
+
+    using namespace std;
+    
+    int main()
+    {
+        cout << "Hello, world!" << endl;
+
+        return 0;
+    }
+  ```
 
 * 运行程序
   * 点击运行`hello-world.cpp`文件
