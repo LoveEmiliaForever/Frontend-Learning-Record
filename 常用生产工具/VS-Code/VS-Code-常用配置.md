@@ -67,3 +67,45 @@
 > ```
 >
 > 也可用GUI界面调节，方便获取配置信息
+
+## 4. 手动完成 VS Code 环境变量与注册表配置
+
+如果在安装后没有勾选自动添加环境变量、自动添加open with vscode至上下文菜单（右键菜单），那么也可以通过手动设置来完成。  
+
+* 添加`Microsoft VS Code\bin`路径到系统环境变量
+  > 打开环境变量设置，打开系统变量的PATH
+  > 并往里面添加一条路径`你安装 VS Code 的路径\Microsoft VS Code\bin`
+* 添加注册表信息以配置右键菜单
+  > 创建一个`添加 VS Code 右键菜单.reg`文件，并将下列命令写入保存后运行该文件
+  > 注意修改下列命令中的`Code.exe`路径
+  >
+  > ```reg
+  > Windows Registry Editor Version 5.00
+  > 
+  > [HKEY_CLASSES_ROOT\*\shell\VSCode]
+  > @="Open with Code"
+  > "Icon"="D:\\Program Files\\Microsoft VS Code\\Code.exe"
+  > 
+  > [HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+  > @="\"D:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%1\""
+  > 
+  > Windows Registry Editor Version 5.00
+  > 
+  > [HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+  > @="Open with Code"
+  > "Icon"="D:\\Program Files\\Microsoft VS Code\\Code.exe"
+  > 
+  > [HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+  > @="\"D:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%V\""
+  > 
+  > Windows Registry Editor Version 5.00
+  > 
+  > [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+  > @="Open with Code"
+  > "Icon"="D:\\Program Files\\Microsoft VS Code\\Code.exe"
+  > 
+  > [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+  > @="\"D:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%V\""
+  > ```
+  >
+  > 这些命令用于添加注册表信息

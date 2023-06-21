@@ -45,8 +45,10 @@
 * [VS-Code 通用配置](./常用生产工具/VS-Code/VS-Code-常用配置.md)
 * [Python 开发环境配置](./常用生产工具/VS-Code/VS-Code-Python配置.md)
 * [HTML-CSS-JS 开发环境配置](./常用生产工具/VS-Code/VS-Code-HTML-CSS-JS配置.md)
+* [C/C++ 开发环境配置](./常用生产工具/VS-Code/VS-Code-C-C++配置.md)
 
 #### 配置 HTML、CSS、JavaScript
-#### 配置 C、C++、C #
+
+#### 配置 C、C++、C\#
 
 #### 配置 Java
