@@ -23,6 +23,7 @@
 
 ## HTML知识
 
+* 《web前端开发核心技术基础》
 * 《HTML5权威指南》
 * [火狐开发者网站：HTML](https://developer.mozilla.org/zh-CN/docs/Web/HTML)
 * [菜鸟教程：HTML](https://www.runoob.com/html/html-tutorial.html)
@@ -32,6 +33,7 @@
 
 ## CSS知识
 
+* 《web前端开发核心技术基础》
 * 《CSS权威指南》
 * 《CSS揭秘》
 * 《CSS世界系列》
