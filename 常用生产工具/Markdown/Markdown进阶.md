@@ -69,7 +69,7 @@ Mermaid 中包含了14种可以使用的图表定义结构
 
 ### 流程图
 
-流程图是由节点和边组成的，在 Mermaid 中有各式各样的语法定义它们的样式、效果等等 
+流程图是由节点和边组成的，在 Mermaid 中有各式各样的语法定义它们的样式、效果等等  
 
 #### 流程图-基础语法
 
@@ -451,6 +451,316 @@ Mermaid 中定义类的语法如下
 ##### 使用fontawesome图标
 
 通过使用语法`fa:图标名字`可以引入`fontawesome`的图标
+
+### 时序图
+
+#### 定义参与者
+
+可以在时序图开头声明该时序图的参与者并给它们取别名  
+
+* 以默认样式声明参与者`participant 别名 as 展示名`  
+* 以角色样式声明参与者`actor 别名 as 展示名`
+
+在声明链接时，使用的是`别名`  
+在声明参与者时也可以不设置`别名`，此时`别名`和`展示名`一致  
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant 机构A as 大学校园
+      actor 学生A as 小明
+      机构A ->> 学生A: 发送学业警告书
+      学生A ->> 机构A: 回复收到
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant 机构A as 大学校园
+    actor 学生A as 小明
+    机构A ->> 学生A: 发送学业警告书
+    学生A ->> 机构A: 回复收到
+```
+
+#### 参与者分组
+
+可以利用`box 颜色 组名` + `声明参与者` + `end`给参与者分组  
+其中`颜色`可以使用`rgb(hex,hex,hex)`定义，也可以使用英文的颜色单词  
+
+```mermaid
+  sequenceDiagram
+    box Yellow 饭店
+    participant A as 后厨
+    actor B as 服务员
+    end
+    box rgb(250,50,250) 客人
+    actor C as 上司
+    actor D as 下属
+    end
+    D ->> C: 老板要吃什么
+    C ->> D: 吃红烧排骨
+    D ->> B: 靓仔，一份红烧排骨
+    B ->> A: 红烧排骨一份
+    A ->> B: 排骨好了
+    B ->> D: 菜来了
+```
+
+#### 链接声明
+
+时序图的链接，就是行为传递，语法如下
+`参与者1 链接样式 参与者2: 传递信息、行为`  
+
+链接样式共有八种  
+
+| 样式语法 | 样式描述 | 样式语法 | 样式描述 | 样式语法 | 样式描述 | 样式语法 | 样式描述 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| `->` | 没箭头实线 | `->>` | 有箭头实线 | `-->` | 没箭头虚线 | `-->>` | 有箭头虚线 |
+| `-x` | 末端十字实线 | `--x` | 末端十字虚线 | `-)` | 末端空心箭头实线 | `--)` | 末端空心箭头虚线 |
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant A as 小明
+      participant B as 小李
+      A -> B: 没箭头实线
+      A ->> B: 有箭头实线
+      A --> B: 没箭头虚线
+      A -->> B: 有箭头虚线
+      A -x B: 末端十字实线
+      A --x B: 末端十字虚线
+      A -) B: 末端空心箭头实线
+      A --) B: 末端空心箭头虚线
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 小明
+    participant B as 小李
+    A -> B: 没箭头实线
+    A ->> B: 有箭头实线
+    A --> B: 没箭头虚线
+    A -->> B: 有箭头虚线
+    A -x B: 末端十字实线
+    A --x B: 末端十字虚线
+    A -) B: 末端空心箭头实线
+    A --) B: 末端空心箭头虚线
+```
+
+#### 参与者激活
+
+激活时间段可以表示参与者正在处理消息或等待回应
+
+Mermaid 中使用`activate`激活参与者，使用`deactivate`停止激活参与者  
+还可以使用简略写法，在链接样式后面添加`+`代表激活，`-`代表停止激活  
+激活状态是可以叠加的
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant A as 小明
+      participant B as 小李
+      A ->>+ B: 现在需要一些信息
+      A ->> B: 把行程报告写完发我
+      activate B
+      B -->> A: 行程报告写好了
+      deactivate B
+      A ->>+ B: 再把报销凭证整理好，发过来
+      B -->>- A: OK了，发给你
+      B -->>- A: 信息全部发完了
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 小明
+    participant B as 小李
+    A ->>+ B: 现在需要一些信息
+    A ->> B: 把行程报告写完发我
+    activate B
+    B -->> A: 行程报告写好了
+    deactivate B
+    A ->>+ B: 再把报销凭证整理好，发过来
+    B -->>- A: OK了，发给你
+    B -->>- A: 信息全部发完了
+```
+
+#### 添加标签信息
+
+通过语法`Note right of或left of或over 参与者: 标签文本`可以添加标签  
+其中 `left of` `right of`可以在单个参与者的左边或右边添加标签信息  
+`over`可以在多个参与者之间添加标签信息  
+
+````markdown
+```mermaid
+    sequenceDiagram
+      participant A as 小明
+      participant B as 小李
+      Note left of A: 小明很饿
+      A ->> B: 去不去吃饭
+      Note over A,B: 小明邀请小李吃饭
+      B ->> A: 我还不饿
+      Note over A,B: 小李谢绝了
+      Note right of B: 小李很饱
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 小明
+    participant B as 小李
+    Note left of A: 小明很饿
+    A ->> B: 去不去吃饭
+    Note over A,B: 小明邀请小李吃饭
+    B ->> A: 我还不饿
+    Note over A,B: 小李谢绝了
+    Note right of B: 小李很饱
+```
+
+#### 循环
+
+通过语法`loop 循环名字` + `具体事件` + `end`为序列图添加循环  
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant A as 小明
+      participant B as 小李
+      A ->> B: 接下来每分钟给我发一条“你好”
+      loop 每过一分钟
+        B ->> A: 你好
+      end
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 小明
+    participant B as 小李
+    A ->> B: 接下来每分钟给我发一条“你好”
+    loop 每过一分钟
+      B ->> A: 你好
+    end
+```
+
+#### 条件语句
+
+序列图中有两种条件语句，一种是类似`if else`类型的，另一种是类似`switch case`类型的  
+它们的语法如下
+
+```markdown
+  A ->> B: xxxx
+  alt 情况描述1
+    B ->> A: 描述1对应的xxxx
+  else 情况描述2
+    B ->> A: 描述2对应的xxxx
+  end
+  opt 什么什么情况
+    B ->> A: 对应的xxxx
+  end
+```
+
+示例如下所示
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant A as 小明
+      participant B as 小李
+      A ->> B: 小李下班有没有事
+      alt 没有事
+        B ->> A: 没事，怎么了
+        A ->> B: 那去吃饭吧
+      else 有事
+        B ->> A: 我下班还有其它事要做
+        A ->> B: 没事，你先忙
+      end
+      opt 不确定有没有事
+        B ->> A: 我也不确定啊
+        A ->> B: 那到时候再说吧
+      end
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 小明
+    participant B as 小李
+    A ->> B: 小李下班有没有事
+    alt 没有事
+      B ->> A: 没事，怎么了
+      A ->> B: 那去吃饭吧
+    else 有事
+      B ->> A: 我下班还有其它事要做
+      A ->> B: 没事，你先忙
+    end
+    opt 不确定有没有事
+      B ->> A: 我也不确定啊
+      A ->> B: 那到时候再说吧
+    end
+```
+
+#### 平行发生声明
+
+表示声明内发生的事情是同时发生的，这个声明可以嵌套以表述多个事件同时发生  
+语法如下
+
+```markdown
+  par 情况描述
+    A -> B: XXXX
+  and 情况描述
+    A -> C: XXXX
+  end
+```
+
+示例如下所示
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant A as 小明
+      participant B as 小李
+      participant C as 小红
+      par 大声聊天
+        A ->> B: 最近新开的饭店不错
+      and 发短信
+        A ->> C: 下班要不要一起去新开的饭店
+      and
+        par 大声聊天
+          B ->> A: 对啊，我上次也去吃过了
+        and 发短信
+          B ->> C: 下班要不要一起去新开的饭店
+        end
+      end
+      par 发短信
+        C ->> A: 不用了
+        C ->> B: 不用了
+      end
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 小明
+    participant B as 小李
+    participant C as 小红
+    par 大声聊天
+      A ->> B: 最近新开的饭店不错
+    and 发短信
+      A ->> C: 下班要不要一起去新开的饭店
+    and
+      par 大声聊天
+        B ->> A: 对啊，我上次也去吃过了
+      and 发短信
+        B ->> C: 下班要不要一起去新开的饭店
+      end
+    end
+    par 发短信
+      C ->> A: 不用了
+      C ->> B: 不用了
+    end
+```
+
 
 ### 饼图
 
