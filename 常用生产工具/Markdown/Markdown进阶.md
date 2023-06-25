@@ -28,8 +28,8 @@
 ### Mermaid 简介
 
 Mermaid 是一个类似 Markdown 的开源脚步语言，它能够根据输入的语句自动生成合适的图像，且广泛受支持。  
-由于 Markdown 参与了 Mermaid 的制作，所以 Markdown 支持内嵌 Mermaid 语法以生成图像。  
-Mermaid 是通过 JS 实现的插件，全称是`mermaid.js`，官网是[Mermaid 官网](https://mermaid.js.org/)  
+由于 Markdown 支持了 Mermaid 的制作，所以 Markdown 支持内嵌 Mermaid 语法以生成图像。  
+Mermaid 是通过 JS 实现的插件，全称是`mermaid.js`，官网是[mermaid.js.org 官网](https://mermaid.js.org/)  
 
 ```mermaid
   flowchart LR
@@ -48,7 +48,7 @@ Mermaid 是通过 JS 实现的插件，全称是`mermaid.js`，官网是[Mermaid
   ```
 ````
 
-例如上面的流程图的源码如下
+例如上面流程图的源码如下
 
 ````markdown
   ```mermaid
@@ -61,11 +61,13 @@ Mermaid 是通过 JS 实现的插件，全称是`mermaid.js`，官网是[Mermaid
   ```
 ````
 
-Mermaid 中包含了14种可以使用的图表定义结构  
-分别是：流程图、时序图、类图、状态图、实体关系图、用户行程图、甘特图、饼图、象限图、需求图、Git分支可视化、思维导图、时间轴图、ZenUML图  
+Mermaid 中包含了12种可以使用的图表定义结构  
+分别是：流程图、时序图、类图、状态图、实体关系图、用户行程图、甘特图、饼图、需求图、Git分支可视化、思维导图、ZenUML图  
 
-考虑到实用性和学习成本，仅重点学习了11种图形语法  
-包括：流程图、时序图、类图、状态图、实体关系图、用户行程图、饼图、象限图、需求图、思维导图、时间轴图  
+考虑到实用性和学习成本，仅重点学习了9种图形语法  
+包括：流程图、时序图、类图、状态图、实体关系图、用户行程图、饼图、需求图、思维导图  
+
+推荐的学习方法是`随用随学` Mermaid 语法并不难学，根据需要进行学习是比较实用的方法  
 
 ### 流程图
 
@@ -230,7 +232,7 @@ Mermaid 中包含了14种可以使用的图表定义结构
 
 ##### 调整链接的长度
 
-在某些情况下，可以大致定义链接的长度而改善 Mermaid 自动画出的图形  
+在某些情况下，可以大致定义链接的长度而改善 Mermaid 画出的图形  
 Mermaid 内可以定义链接跨越的级数以调整链接长度  
 想要跨越多少级数，只需要在正常的连接符号上加入对应数量的`-`、`.`、`=`等符号即可
 
@@ -487,6 +489,26 @@ Mermaid 中定义类的语法如下
 可以利用`box 颜色 组名` + `声明参与者` + `end`给参与者分组  
 其中`颜色`可以使用`rgb(hex,hex,hex)`定义，也可以使用英文的颜色单词  
 
+````markdown
+  ```mermaid
+    sequenceDiagram
+      box Yellow 饭店
+      participant A as 后厨
+      actor B as 服务员
+      end
+      box rgb(250,50,250) 客人
+      actor C as 上司
+      actor D as 下属
+      end
+      D ->> C: 老板要吃什么
+      C ->> D: 吃红烧排骨
+      D ->> B: 靓仔，一份红烧排骨
+      B ->> A: 红烧排骨一份
+      A ->> B: 排骨好了
+      B ->> D: 菜来了
+  ```
+````
+
 ```mermaid
   sequenceDiagram
     box Yellow 饭店
@@ -512,10 +534,12 @@ Mermaid 中定义类的语法如下
 
 链接样式共有八种  
 
-| 样式语法 | 样式描述 | 样式语法 | 样式描述 | 样式语法 | 样式描述 | 样式语法 | 样式描述 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `->` | 没箭头实线 | `->>` | 有箭头实线 | `-->` | 没箭头虚线 | `-->>` | 有箭头虚线 |
-| `-x` | 末端十字实线 | `--x` | 末端十字虚线 | `-)` | 末端空心箭头实线 | `--)` | 末端空心箭头虚线 |
+| 样式语法 | 样式描述 | 样式语法 | 样式描述 |
+| :---: | :---: | :---: | :---: |
+| `->` | 没箭头实线 | `->>` | 有箭头实线 |
+| `-->` | 没箭头虚线 | `-->>` | 有箭头虚线 |
+| `-x` | 末端十字实线 | `--x` | 末端十字虚线 |
+| `-)` | 末端空心箭头实线 | `--)` | 末端空心箭头虚线 |
 
 ````markdown
   ```mermaid
@@ -688,14 +712,14 @@ Mermaid 中使用`activate`激活参与者，使用`deactivate`停止激活参�
     participant B as 小李
     A ->> B: 小李下班有没有事
     alt 没有事
-      B ->> A: 没事，怎么了
+      B -->> A: 没事，怎么了
       A ->> B: 那去吃饭吧
     else 有事
-      B ->> A: 我下班还有其它事要做
-      A ->> B: 没事，你先忙
+      B -->> A: 我下班还有其它事要做
+      A ->> B: OK，你先忙
     end
     opt 不确定有没有事
-      B ->> A: 我也不确定啊
+      B -->> A: 我也不确定啊
       A ->> B: 那到时候再说吧
     end
 ```
@@ -750,17 +774,174 @@ Mermaid 中使用`activate`激活参与者，使用`deactivate`停止激活参�
       A ->> C: 下班要不要一起去新开的饭店
     and
       par 大声聊天
-        B ->> A: 对啊，我上次也去吃过了
+        B -->> A: 对啊，我上次也去吃过了
       and 发短信
         B ->> C: 下班要不要一起去新开的饭店
       end
     end
     par 发短信
-      C ->> A: 不用了
-      C ->> B: 不用了
+      C --x A: 不用了
+      C --x B: 不用了
     end
 ```
 
+#### 关键步骤声明
+
+可以在时序图中定义一些必不可少的步骤，也就是必须完成的步骤  
+
+语法如下  
+
+```markdown
+  sequenceDiagram
+  critical 描述xxx
+    发生行为
+  option 情况xxx
+    应对xxx情况的处理行为
+  end
+```
+
+示例如下
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant A as 商店
+      actor B as 顾客
+      critical 买东西必须要付钱
+        A ->> B: 商品
+        B ->> A: 钞票
+      option 没钱
+        A ->> B: 没钱不卖东西
+      end
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant A as 商店
+    actor B as 顾客
+    critical 买东西必须要付钱
+      A ->> B: 商品
+      B -->> A: 钞票
+    option 没钱
+      A ->> B: 没钱不卖东西
+    end
+```
+
+#### 空窗期定义
+
+可以定义空窗期以在某段时间内停止序列的进行，这个空窗期通常用来表示处理一些事件  
+
+语法如下
+
+```markdown
+  sequenceDiagram
+    break 发生了事件xxx
+      空窗期内发生的行为、
+    end
+```
+
+示例如下
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      participant bank as 银行
+      participant database as 数据库
+      actor consumer as 顾客
+      consumer ->> bank: 我卡里还有多少钱
+      bank -->> consumer: 正在查询
+      break 查找银行卡的余额
+        bank ->> database: 请求数据
+        database -->> bank: 返回数据
+      end
+      bank -->> consumer: 卡里还有xxxx元
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    participant bank as 银行
+    participant database as 数据库
+    actor consumer as 顾客
+    consumer ->> bank: 我卡里还有多少钱
+    bank -->> consumer: 正在查询
+    break 查找银行卡的余额
+      bank ->> database: 请求数据
+      database -->> bank: 返回数据
+    end
+    bank -->> consumer: 卡里还有xxxx元
+```
+
+#### 定义背景颜色
+
+可以为一个行为或多个行为定义背景颜色，可使用`rgb(hex,hex,hex)`定义具体颜色  
+
+语法如下
+
+```markdown
+  rect rgb(hex,hex,hex)
+  行为
+  end
+```
+
+示例如下
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      actor driver as 司机
+      actor passenger as 乘客
+      rect rgb(0, 200, 0)
+      driver ->> passenger: 是尾号1234的乘客吗
+      rect rgb(50, 150, 200)
+      passenger ->> driver: 对
+      end
+      driver ->> passenger: 上车吧
+      end
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    actor driver as 司机
+    actor passenger as 乘客
+    rect rgb(0, 200, 0)
+    driver ->> passenger: 是尾号1234的乘客吗
+    rect rgb(50, 150, 200)
+    passenger ->> driver: 对
+    end
+    driver ->> passenger: 上车吧
+    end
+```
+
+#### 为行为添加序列号
+
+只需要输入`autonumber`即可
+
+示例
+
+````markdown
+  ```mermaid
+    sequenceDiagram
+      autonumber
+      A ->> B: 身体怎么样
+      B ->> B: 自检中
+      B ->> A: 身体还不错
+      B ->> C: 你的身体怎么样
+      C ->> B: 也还可以
+  ```
+````
+
+```mermaid
+  sequenceDiagram
+    autonumber
+    A ->> B: 身体怎么样
+    B ->> B: 自检中
+    B ->> A: 身体还不错
+    B ->> C: 你的身体怎么样
+    C ->> B: 也还可以
+```
 
 ### 饼图
 
