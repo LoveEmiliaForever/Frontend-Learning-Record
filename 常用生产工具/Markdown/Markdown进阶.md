@@ -14,6 +14,14 @@
 
 * 折叠标签`<details></details>`与`<summary></summary>`
   * 这两个标签合用能产生折叠内容并带有小标题的效果
+
+  ```html
+    <details>
+      <summary>小标题</summary>
+      <p>被折叠的东西</p>
+    </details>
+  ```
+
 * 定义键盘输入文本`<kbd></kbd>`
   * 这个标签能产生类似`` ` ` ``的代码片段效果，通常`<kbd></kbd>`标签之间嵌套使用
 * 定义输出文本、无其它意义文本`<samp></samp>`
