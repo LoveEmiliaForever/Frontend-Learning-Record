@@ -101,6 +101,10 @@
 * [grid布局](./《MDN-前端开发入门文档》/CSS布局.md/#网格布局)
 * [响应式布局](./《MDN-前端开发入门文档》/CSS布局.md/#响应式布局)
 
+### SCSS语言
+
+* [SCSS入门及常用语法](./CSS学习笔记/SCSS视频学习笔记.md)
+
 ## JavaScript 学习历程
 
 ### JavaScript 基础
