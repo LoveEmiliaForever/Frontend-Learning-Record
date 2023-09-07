@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--让预加载器知道要加载的东西，用于后面使用DOM添加JS引入-->
+        <link rel="preload" href="./eg2.js">
+        <title>eg-page</title>
+        <!--可以放在head里面，也可以放到body结尾-->
+        <script>
+            console.log("Hello! World!");
+        </script>
+    </head>
+    <body>
+        <!--放在这里更好-->
+        <!--程序会按照script元素的先后顺序运行-->
+        <script>
+            console.log("Hello! World!");
+        </script>
+        <script defer src="./eg.js"></script>
+        <!--如果有defer 或 async，则执行顺序不保证-->
+        <noscript>
+            <p>你的浏览器禁用了JS</p>
+        </noscript>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+console.log("loaded JS file 2");
