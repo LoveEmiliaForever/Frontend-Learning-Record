@@ -93,8 +93,6 @@ function uuu(){console.log(arguments.callee)};
 uuu();//[Function: uuu]
 //由于函数名是可以变化的，所以以函数名作为嵌套等等是不可靠和麻烦的，使用arguments.callee更好
 
-
-
 //this
 //在标准函数中，this指向调用函数的上下文对象
 //在箭头函数中，this指向定义了箭头函数的上下文对象
@@ -120,3 +118,42 @@ o["sayColor2"]();//red
 //new.target
 //如果函数正常调用，则new.target值为undefined
 //如果函数使用new关键字调用，则new.target指向被调用构造函数
+
+
+
+//函数属性与方法
+//每个函数有两个属性length和prototype，length是函数的形参个数
+//此外还有apply()、call()和bind()方法，指定函数的this值
+this.num = 5;
+function numAdd(num1, num2){
+    return num1+num2+this.num;
+}
+console.log(numAdd.length);
+//apply()方法接受以数组方式传入的函数参数
+console.log(numAdd.apply({num:7},[0,0]));//7
+//call()方法接受以参数形式传入的函数参数
+console.log(numAdd.call({num:9},0,0))//9
+//bind()方法会绑定值到函数的this上，并返回新函数实例
+console.log(numAdd.bind({num:11})(0,0));//11
+//函数的toLocaleString()和toString()返回函数的代码
+//valueOf()返回函数本身
+
+
+
+//函数表达式
+//函数表达式和匿名函数不会有函数提升
+//不要把函数声明当成函数表达式使用，可能出现莫名其妙的问题
+
+
+
+//递归函数
+//使用arguments.callee完成递归函数的调用代码
+//严格模式下无法访问arguments.callee，使用函数名称调用递归，但要确保函数名称不变
+
+
+
+//立刻调用的函数表达式
+//将匿名函数放在括号里，它会被立刻调用（实际生成），如果再加个()就是运行函数了
+(function(){
+    console.log("hi");
+})();//hi
