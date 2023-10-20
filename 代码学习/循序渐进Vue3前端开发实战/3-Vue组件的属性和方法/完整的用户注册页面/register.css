@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+h2{
+    width: 85%;
+    text-align: right;
+    font-size: 1rem;
+}
+.inputContainer{
+    width:50%;
+    margin:1rem auto;
+    padding: 0.3rem;
+}
+.inputContainer p{
+    color:red;
+    display: inline;
+}
+.inputContainer label{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.inputContainer input{
+    display: block;
+    width: 90%;
+    height: 2rem;
+    border-radius: 0.4rem;
+    margin: 0.2rem 0;
+    padding: 0 1rem;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.096);
+}
+.preferContainerSigle{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    width: 50%;
+}
+.preferContainer{
+    font-weight: 300;
+    margin: 0.3rem auto;
+    width: 50%;
+}
+.registerButton{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid black;
+    width: 50%;
+    margin:1rem 25%;
+}

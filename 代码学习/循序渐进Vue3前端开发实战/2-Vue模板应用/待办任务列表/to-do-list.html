@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>to-do-list</title>
+    </head>
+    <body>
+        <div id="Application">
+            <form @submit.prevent="createTask">
+                <input type="text" placeholder="输入任务" v-model="taskText">
+                <button type="submit">新建任务</button>
+            </form>
+            <hr>
+            <ol>
+                <li v-for="(item,index) of taskList">
+                    {{item}}
+                    <button type="button" @click="remove(index)">删除任务</button>
+                </li>
+            </ol>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script>
+            const App = {
+                data(){
+                    return {
+                        taskList:[],
+                        taskText:""
+                    };
+                },
+                methods:{
+                    createTask(){
+                        this.taskList.push(this.taskText);
+                    },
+                    remove(index){
+                        this.taskList.splice(index, 1);
+                    }
+                }
+            }
+            Vue.createApp(App).mount("#Application");
+        </script>
+    </body>
+</html>

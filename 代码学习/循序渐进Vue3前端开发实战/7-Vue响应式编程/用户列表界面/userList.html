@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>user-list</title>
+        <style>
+            .container{
+                margin:50px;
+            }
+            .content{
+                margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Application">
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script>
+            let mock=[
+                {
+                    name:"小王",
+                    sex:0
+                },{
+                    name:"小红",
+                    sex:1
+                },{
+                    name:"小李",
+                    sex:1
+                },{
+                    name:"小张",
+                    sex:0
+                },
+            ];
+            const App = Vue.createApp({
+                setup(){
+                    const showDatas = Vue.ref([]);
+                    const getAllData = ()=>{
+                        setTimeout(()=>{
+                            showDatas.value = mock;
+                        }, 3000);
+                    };
+
+                    Vue.onMounted(getAllData);
+
+                    let sexFilter = Vue.ref(-1);
+                    let searchKey = Vue.ref("");
+                    let FilterData = ()=>{
+                        searchKey.value = "";
+                        if(sexFilter.value == -1){
+                            showDatas.value = mock;
+                        }else{
+                            showDatas.value = mock.filter((data)=>{
+                                return data.sex == sexFilter.value;
+                            });
+                        }
+                    };
+                    let searchData = ()=>{
+                        sexFilter.value = -1;
+                        if(searchKey.value.length == 0){
+                            showDatas.value = mock;
+                        }else{
+                            showDatas.value = mock.filter((data)=>{
+                                return data.name.search(searchKey.value) != -1;
+                            })
+                        }
+                    };
+                    
+                    Vue.watch(sexFilter, FilterData);
+                    Vue.watch(searchKey, searchData);
+
+                    return{
+                        showDatas,
+                        searchKey,
+                        sexFilter
+                    };
+                },
+                template:`
+                <div class="container">
+                    <div class="content">
+                        <input type="radio" name="sex" :value="-1" v-model="sexFilter">全部
+                        <input type="radio" name="sex" :value="0" v-model="sexFilter">男
+                        <input type="radio" name="sex" :value="1" v-model="sexFilter">女
+                    </div>
+                    <div class="content">搜索:<input type="text" v-model="searchKey"></div>
+                    <div class="content">
+                        <tr>
+                            <th>姓名</th>
+                            <th>性别</th>
+                        </tr>
+                        <tr v-for="(data, index) of showDatas">
+                            <td>{{data.name}}</td>
+                            <td>{{data.sex == 0 ? '男':'女'}}</td>
+                        </tr>
+                    </div>
+                </div>
+                `
+            });
+            App.mount("#Application");
+        </script>
+    </body>
+</html>

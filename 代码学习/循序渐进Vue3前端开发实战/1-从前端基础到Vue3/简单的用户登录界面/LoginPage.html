@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-Page</title>
+    </head>
+    <body>
+        <div id="Application" style="text-align: center;">
+            <h1>{{title}}</h1>
+            <!--v-if是渲染与否-->
+            <div v-if="noLogin">
+                <!--v-model是和变量双向绑定-->
+                账号：<input type="text" v-model="userName">
+            </div>
+            <div v-if="noLogin">
+                密码：<input type="password" v-model="password">
+            </div>
+            <div v-on:click="click" style="border-radius: 30px; width:100px; margin:20px auto; color:white; background-color: rgb(115, 196, 233);">{{buttonTitle}}</div>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./LoginPage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    background-color: blanchedalmond;
+    display: inline;
+}
+.ball{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 100px;
+    top:100px;
+    background-color: red;
+    border-radius: 30px;
+    z-index: 100;
+}
+.ball2{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 100px;
+    top:100px;
+    background-color: rgb(53, 135, 212);
+    border-radius: 30px;
+    z-index: 100;
+}

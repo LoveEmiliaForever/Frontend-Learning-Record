@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pinball-game</title>
+        <link rel="stylesheet" type="text/css" href="./pinball-game.css">
+    </head>
+    <body>
+        <div id="Application">
+            <div @mousemove="moveBoard" class="gameRange">
+                <p>总共接球次数：{{catchTimes}}</p>
+                <p v-if="!gameState" class="failRemind">游戏失败</p>
+                <button type="button" v-if="!gameState" @click="resetGame" class="resetButton">重新开始</button>
+                <div class="pinBall" :style="{left:pinBallX+'%', top:pinBallY+'%'}"></div>
+                <div class="board" :style="{left:boardX+'%'}"></div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./pinball-game.js"></script>
+    </body>
+</html>
