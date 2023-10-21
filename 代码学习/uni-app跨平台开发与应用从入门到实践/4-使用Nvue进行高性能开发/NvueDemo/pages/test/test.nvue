@@ -1,0 +1,27 @@
+<template>
+    <view @click="send">
+        <text>点击页面发送信息</text>
+    </view>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                
+            }
+        },
+        methods: {
+            send () {
+                console.log("发送消息")
+                uni.$emit('nvue-send', {
+                    msg: '我是nvue页面的数据'
+                })
+            }
+        }
+    }
+</script>
+
+<style>
+
+</style>
