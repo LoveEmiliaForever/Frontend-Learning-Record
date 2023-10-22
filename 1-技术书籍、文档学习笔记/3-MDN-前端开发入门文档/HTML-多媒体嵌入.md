@@ -87,7 +87,7 @@
 
 一个`WebM`格式的视频文件如下所示，它包含`音频轨道`、`视频轨道`、`文本轨道`  
 
-![Alt text](image-6.png)
+![Alt text](./image/image-6.png)
 
 其中的`音频轨道`以`音频编解码器`进行操作，`视频轨道`以`视频编解码器`进行操作  
 
@@ -276,7 +276,7 @@
 
 然而它们已经老了，因此了解一下以防遇到它们是不知道是干什么用的  
 
-![Alt text](image-7.png)
+![Alt text](./image/image-7.png)
 
 ### 其它的嵌入标签
 
@@ -308,7 +308,7 @@
 ```
 
 上面的代码将展示如下图案  
-![Alt text](image-8.png)
+![Alt text](./image/image-8.png)
 
 虽然可以通过手动编写简单SVG，但遇到复杂图形时还是使用像`inkscape`、`illustrator`这样的编辑器更好  
 

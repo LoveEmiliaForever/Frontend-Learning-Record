@@ -99,7 +99,7 @@ Grid 布局能够用于同时在**两个维度**上把元素按行和列排列�
 紧跟着`position`的是四个属性`top`、`left`、`bottom`、`right`  
 它们都是表示相较于选定的边进行位移，不过由于坐标系是屏幕的，和常规不一样  
 
-![Alt text](image-19.png)
+![Alt text](./image/image-19.png)
 
 ### 多列布局简介
 
@@ -128,7 +128,7 @@ Grid 布局能够用于同时在**两个维度**上把元素按行和列排列�
 
 ### flex模型说明
 
-![Alt text](image-20.png)  
+![Alt text](./image/image-20.png)  
 
 * `主轴`：沿flex元素**放置方向**延伸的轴
 * `交叉轴`：垂直于flex元素放置方向的轴
@@ -230,7 +230,7 @@ Grid 布局能够用于同时在**两个维度**上把元素按行和列排列�
 网格是由一系列水平及垂直的线构成的一种布局模式  
 一个网格通常具有许多的**列**与**行**，以及行与行、列与列之间被称为**沟槽**的间隙  
 
-![Alt text](image-21.png)  
+![Alt text](./image/image-21.png)  
 
 ### 定义一个网格
 
@@ -283,7 +283,7 @@ fr可以和其它单位混用
     }
 ```
 
-![Alt text](image-22.png)  
+![Alt text](./image/image-22.png)  
 
 ### minmax()函数
 
@@ -337,7 +337,7 @@ fr可以和其它单位混用
     }
 ```
 
-![Alt text](image-23.png)  
+![Alt text](./image/image-23.png)  
 
 > :grey_exclamation:也可以用 -1 来定位到最后一条列分隔线或是行分隔线，并且可以用负数来指定倒数的某一条分隔线
 > 但是这只能用于显式网格，对于隐式网格-1不一定能定位到最后一条分隔线

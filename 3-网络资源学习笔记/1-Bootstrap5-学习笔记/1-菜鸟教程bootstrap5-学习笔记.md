@@ -241,7 +241,7 @@ Bootstrap 提供了一套响应式、移动设备优先的流式网格系统
     </div>
 ```
 
-![Alt text](image.png)
+![Alt text](./image/image.png)
 
 让列偏移
 
@@ -627,7 +627,7 @@ Bootstrap 5 中允许我们将按钮放在同一行上
 
 ## bootstrap5徽章
 
-徽章（Badges）主要用于突出显示新的或未读的项![Alt text](image-1.png)  
+徽章（Badges）主要用于突出显示新的或未读的项![Alt text](./image/image-1.png)  
 如需使用徽章，只需要将`.badge`类加上带有指定意义的颜色类(如`.bg-secondary`)添加到`<span>`元素上即可  
 徽章可以根据父元素的大小的变化而变化  
 
@@ -693,7 +693,7 @@ Bootstrap 5 中允许我们将按钮放在同一行上
     </div>
 ```
 
-![Alt text](image-2.png)  
+![Alt text](./image/image-2.png)  
 
 ## bootstrap5加载效果
 
@@ -765,7 +765,7 @@ Bootstrap 5 中允许我们将按钮放在同一行上
     </ul>
 ```
 
-实现效果：![Alt text](image-3.png)  
+实现效果：![Alt text](./image/image-3.png)  
 
 ## bootstrap5列表组
 

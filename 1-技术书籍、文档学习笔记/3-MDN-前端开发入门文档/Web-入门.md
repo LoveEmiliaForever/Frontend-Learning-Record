@@ -67,10 +67,10 @@ HTML 的中文是`超文本标记语言`
 ### HTML元素详解
 
 而`元素`的标记，则使用`标签`或`标签对`包裹内容  
-![Alt text](image.png)
+![Alt text](./image/image.png)
 
 `元素`是可以拥有属性的  
-![Alt text](image-1.png)  
+![Alt text](./image/image-1.png)  
 
 * 属性和元素名、属性和属性之间应有空格
 * 属性和属性值由`=`连接
@@ -154,7 +154,7 @@ HTML 中可以定义六个级别的标题`<h1>`到`<h6>`
 
 CSS 能够为网站内容添加样式，使它变得好看  
 CSS是一门样式表语言，它是由规则集构成的，规则集结构如下  
-![Alt text](image-3.png)  
+![Alt text](./image/image-3.png)  
 
 ### CSS 选择器
 
@@ -185,7 +185,7 @@ CSS 能够设置文本的字体和排版样式，以美化网页，常用的属�
 ### CSS盒子模型
 
 CSS 将大部分的 HTML 元素看作一个个的盒子，盒子有其自身属性，盒子之间有嵌套等等关系  
-![Alt text](image-5.png)  
+![Alt text](./image/image-5.png)  
 
 * `padding`（内边距）：是指内容周围的空间。
 * `border`（边框）：是紧接着内边距的线。

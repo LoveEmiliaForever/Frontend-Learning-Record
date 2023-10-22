@@ -575,14 +575,14 @@ CSS 中使用的两种盒子为`块级盒子`与`内联盒子`，这两种盒子
 * Border box 边框：包裹内容和内边距，大小通过`border`设置
 * Margin box 外边距：最外层区域，是盒子和其它元素之间的空白区域，大小通过`margin`设置
 
-![Alt text](image-9.png)  
+![Alt text](./image/image-9.png)  
 
 #### 标准盒子模型
 
 在标准模型中，给盒子设置`width`和`height`，实际设置的是`content box`  
 `padding`和`border`再加上`content box` 的宽高一起决定整个盒子的大小  
 
-![Alt text](image-10.png)  
+![Alt text](./image/image-10.png)  
 
 > :grey_exclamation:`margin`会影响盒子在页面的占用空间，但是盒子的大小和它无关，盒子的范围到边框而止
 
@@ -590,7 +590,7 @@ CSS 中使用的两种盒子为`块级盒子`与`内联盒子`，这两种盒子
 
 使用了这个模型后，所有的`width`和`height`都是可见的宽高  
 
-![Alt text](image-11.png)  
+![Alt text](./image/image-11.png)  
 
 浏览器默认使用`标准盒子模型`，如果要切换，应该使用`box-sizing: border-box`  
 
@@ -625,7 +625,7 @@ CSS 中使用的两种盒子为`块级盒子`与`内联盒子`，这两种盒子
 例如下图中，第一段的`margin-bottom: 50px`，第二段的`margin-top: 30px`  
 那么由于外边距折叠，它们渲染出来的实际边距是`50px`  
 
-![Alt text](image-12.png)
+![Alt text](./image/image-12.png)
 
 #### 边框
 
@@ -655,7 +655,7 @@ CSS 中使用的两种盒子为`块级盒子`与`内联盒子`，这两种盒子
 如图，内联盒子也设置了`width`、`height`、`padding`、`margin`、`border`  
 不过，`width`、`height`都被忽略了  
 
-![Alt text](image-13.png)
+![Alt text](./image/image-13.png)
 
 ### display:inline-block
 
@@ -668,7 +668,7 @@ display 有一个特殊的值，它在内联和块之间提供了一个中间状
 * `padding`、`margin`、`border`会推开其它元素
 * 元素不会换行
 
-![Alt text](image-14.png)
+![Alt text](./image/image-14.png)
 
 > :grey_exclamation:如果想要让`<a>`的点击范围比看起来大，可以使用`padding`属性
 
@@ -810,11 +810,11 @@ CSS 中的书写模式是指文本的排列方向是`横向`还是`纵向`的
 
 如横向书写时的两种维度  
 
-![Alt text](image-15.png)
+![Alt text](./image/image-15.png)
 
 纵向书写时的两种维度
 
-![Alt text](image-16.png)
+![Alt text](./image/image-16.png)
 
 ### 逻辑属性和逻辑值
 
@@ -999,13 +999,13 @@ CSS 中有两种类型的长度，`相对长度`和`绝对长度`
 
 如`min-height: 150px`  
 
-![Alt text](image-17.png)
+![Alt text](./image/image-17.png)
 
 `max-width`的常见用法为，在没有足够空间以原有宽度展示内容时，让内容缩小，同时确保它们不会比这一宽度大  
 
 如`<img>`设置了`max-width: 100%`  
 
-![Alt text](image-18.png)
+![Alt text](./image/image-18.png)
 
 ### 视口单位
 

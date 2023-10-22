@@ -209,11 +209,11 @@ Mermaid 中包含了12种可以使用的图表定义结构
 
 | 节点样式 | 样式语法 | 样式效果 | 节点样式 | 样式语法 | 样式效果 | 节点样式 | 样式语法 | 样式效果 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 默认 | `[文本]` | ![Alt text](image-2.png) | 圆边 | `(文本)` | ![Alt text](image-3.png) | 胶囊 | `([文本])` | ![Alt text](image-4.png) |
-| 子程序 | `[[文本]]` | ![Alt text](image-5.png) | 圆柱 | `[(文本)]` | ![Alt text](image-6.png) | 圆形 | `((文本))` | ![Alt text](image-7.png) |
-| 六边形 | `{{文本}}` | ![Alt text](image-10.png) | 棱形 | `{文本}` | ![Alt text](image-9.png) | 正四边形 | `[/文本/]` | ![Alt text](image-11.png) |
-| 反四边形 | `[\文本\]` | ![Alt text](image-12.png) | 正梯形 | `[/文本\]` | ![Alt text](image-13.png) | 反梯形 | `[\文本/]` | ![Alt text](image-14.png) |
-| 旗帜 | `>文本]` | ![Alt text](image-8.png) | 双圆 | `(((文本)))` | ![Alt text](image-15.png) |
+| 默认 | `[文本]` | ![Alt text](./image/image-2.png) | 圆边 | `(文本)` | ![Alt text](./image/image-3.png) | 胶囊 | `([文本])` | ![Alt text](./image/image-4.png) |
+| 子程序 | `[[文本]]` | ![Alt text](./image/image-5.png) | 圆柱 | `[(文本)]` | ![Alt text](./image/image-6.png) | 圆形 | `((文本))` | ![Alt text](./image/image-7.png) |
+| 六边形 | `{{文本}}` | ![Alt text](./image/image-10.png) | 棱形 | `{文本}` | ![Alt text](./image/image-9.png) | 正四边形 | `[/文本/]` | ![Alt text](./image/image-11.png) |
+| 反四边形 | `[\文本\]` | ![Alt text](./image/image-12.png) | 正梯形 | `[/文本\]` | ![Alt text](./image/image-13.png) | 反梯形 | `[\文本/]` | ![Alt text](./image/image-14.png) |
+| 旗帜 | `>文本]` | ![Alt text](./image/image-8.png) | 双圆 | `(((文本)))` | ![Alt text](./image/image-15.png) |
 
 ##### 声明节点间的连接
 
@@ -292,10 +292,10 @@ Mermaid 内可以定义链接跨越的级数以调整链接长度
 
 | 样式语法 | 样式效果 | 样式语法 | 样式效果 | 样式语法 | 样式效果 | 样式语法 | 样式效果 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `A --- B` | ![Alt text](image-16.png) | `B --标签--- C` | ![Alt text](image-17.png) | `C --> D` | ![Alt text](image-18.png) | `D --标签--> E` | ![Alt text](image-19.png) |
-| `E <--> F` | ![Alt text](image-20.png) | `F -.-> G` | ![Alt text](image-21.png) | `G -.标签.-> H` | ![Alt text](image-22.png) | `H <-.-> I` | ![Alt text](image-23.png) |
-| `J ==> K` | ![Alt text](image-24.png) | `K ==标签==> L` | ![Alt text](image-25.png) | `L --o M` | ![Alt text](image-26.png) | `M o--o N` | ![Alt text](image-27.png) |
-| `N --x O` | ![Alt text](image-28.png) | `O x--x P` | ![Alt text](image-29.png) | `` |  | `` |  |
+| `A --- B` | ![Alt text](./image/image-16.png) | `B --标签--- C` | ![Alt text](./image/image-17.png) | `C --> D` | ![Alt text](./image/image-18.png) | `D --标签--> E` | ![Alt text](./image/image-19.png) |
+| `E <--> F` | ![Alt text](./image/image-20.png) | `F -.-> G` | ![Alt text](./image/image-21.png) | `G -.标签.-> H` | ![Alt text](./image/image-22.png) | `H <-.-> I` | ![Alt text](./image/image-23.png) |
+| `J ==> K` | ![Alt text](./image/image-24.png) | `K ==标签==> L` | ![Alt text](./image/image-25.png) | `L --o M` | ![Alt text](./image/image-26.png) | `M o--o N` | ![Alt text](./image/image-27.png) |
+| `N --x O` | ![Alt text](./image/image-28.png) | `O x--x P` | ![Alt text](./image/image-29.png) | `` |  | `` |  |
 
 ```mermaid
   graph LR
