@@ -1,0 +1,53 @@
+img{
+	width:auto;
+	height:auto;
+	max-width:100%;
+
+}
+#pic-show{
+	width:500px;
+	height:281px;
+	overflow:hidden;
+	border-radius:10px;
+}
+#pic-container{
+	width:500px;
+	padding:10px;
+	margin:0px auto 0px;
+	border-radius:10px;
+	background-color:rgb(0, 88, 129);
+}
+#image-gallery{
+	padding:0px;
+	height:94px;
+	display:flex;
+	justify-content:space-between;
+	box-sizing:border-box;
+	flex:1;
+}
+li{
+	width:25%;
+	height:70px;
+	list-style:none;
+	margin:0px 10px 0px;
+	overflow:hidden;
+	border-radius:10px;
+}
+
+body{
+	background-color:rgb(224, 255, 254);
+	padding:0px;
+	margin:0px;
+}
+#main{
+	margin-left:300px;
+	margin-right:300px;
+	margin-top:20px;
+	padding:20px;
+	background-color:rgb(106, 164, 209);
+	border-radius:20px;
+}
+#Pic-Description{
+	text-align:center;
+	font-size:20px;
+}

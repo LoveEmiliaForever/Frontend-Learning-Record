@@ -1,0 +1,30 @@
+#header-bottom > div:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0.484);
+}
+hr{
+    border-color: rgba(237, 237, 237, 0.364);
+}
+#newest-message > div div{
+    background-color: rgba(213, 213, 213, 0.316);
+}
+#set-message-introducing{
+    color: rgb(255, 255, 255);
+}
+#real-time-message > div > p{
+    background-color: rgb(24, 138, 220);
+    color: rgb(255, 255, 255);
+}
+#real-time-message > div > div{
+    background-color: aliceblue;
+}
+#message-edit{
+    background-color: rgb(220, 239, 255);
+}
+#message-edit form p:nth-of-type(3){
+    background-color: rgb(112, 179, 255);
+    color: white;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.647);
+    color:white;
+}

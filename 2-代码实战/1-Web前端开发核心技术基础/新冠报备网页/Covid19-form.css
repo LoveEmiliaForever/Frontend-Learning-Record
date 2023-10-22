@@ -1,0 +1,431 @@
+body,div,span,p,html,h1,h2,h3{
+	margin:0px;
+}
+#goTop{
+	position:fixed;
+	font-size:14px;
+	top:85%;
+	left:90%;
+	color:rgb(255,255,255);
+	background-color:rgba(85, 170, 255, 0.7);
+	padding:15px;
+	border-radius:40px;
+}
+#goTop a{
+	text-decoration:none;	
+}
+#goTop a:link,#goTop a:visited{
+	color:rgb(255,255,255);
+}
+#side{
+	position:fixed;
+	top:20%;
+	left:83%;
+	width:197px;
+	background-color:rgba(255, 182, 121, 0.1);
+	padding:20px 5px 20px 20px;
+	border:1px solid rgba(255, 182, 121, 0.2);
+	border-radius:20px;
+	box-shadow:0px 0px 5px 0px;
+	line-height:30px;
+}
+#side a{
+	background-color:rgba(85, 0, 0, 0.1);
+	padding:3px 10px 3px;
+	border-radius:10px;
+}
+#side a:link,#side a:visited{
+	text-decoration:none;
+	color:rgb(85, 0, 0);
+}
+#side a:hover{
+	text-decoration:underline;
+	color:rgb(255, 170, 127);
+	background-color:rgba(85, 170, 255, 0.7);
+}
+a[href="#top"]{
+	font-size:18px;
+}
+a[href="#1"],a[href="#2"]{
+	margin-left:10px;
+}
+a[href*="#1."],a[href*="#2."]{
+	margin-left:20px;
+	font-size:14px;
+}
+#main-container{
+	width:1200px;
+	background-color:#FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	padding:50px 20px;
+	box-shadow:0px 0px 10px 2px #A8B1B1;
+}
+body{
+	background-color:#EAF0EF;
+}
+#COVID19-present > div{
+/* 	position:relative; */
+}
+h1{
+	margin-bottom:50px;
+	font-size:45px;
+	text-align:center;
+}
+h2{
+	margin-left:10px;
+	margin-bottom:20px;
+	margin-top:20px;
+	font-size:26px;
+}
+h3{
+	margin-left:20px;
+	margin-bottom:10px;
+	margin-top:10px;
+	font-size:20px;
+}
+p{
+	text-indent:2em;
+	margin-left:20px;
+	font-weight:500;
+	line-height:25px;
+}
+dt[class]{
+	margin-left:40px;
+}
+dl{
+	margin:0 auto;
+}
+tr{
+	display:block;
+	margin:5px 0px;
+}
+td{
+	text-align:center;
+	width:180px;
+	font-size:15px;
+}
+td:hover{
+	background-color:rgba(137,189,255,0.1);
+	border-radius:10px;
+}
+.orange-red{
+	color:#CC641F;
+}
+.orange{
+	color:#FF7E00;
+}
+.navy-blue{
+	color:#285083;
+}
+.purple-red{
+	color:#9B2268;
+}
+.red{
+	color:#A71718;
+}
+.light-green{
+	color:#4F8325;
+}
+.black{
+	color:#5A0000;
+}
+.increase{
+	font-family:微软雅黑;
+	font-size:12px;
+	line-height:12px;
+	opacity:0.7;
+}
+.data-update-date{
+	font-size:12px;
+	color:#8F8F8F;
+	position:relative;
+	left:25px;
+}
+.data-source{
+	position:absolute;
+	left:550px;
+}
+.data-source-under{
+	position:absolute;
+	left:370px;
+}
+.data-source>a:link,.data-source-under>a:link{
+	text-decoration:none;
+	color:#8F8F8F;
+}
+.data-source>a:visited,.data-source-under>a:visited{
+	text-decoration:none;
+	color:#8F8F8F;
+}
+.data-source>a:hover,.data-source-under>a:hover{
+	text-decoration:underline;
+	color:#7FAB8A;
+}
+td>span{
+	font-size:16px;
+	/* font-weight:100; */
+	font-family:HGF9_CNKI;
+	line-height:18px;
+	opacity:0.9;
+}
+td>span:hover{
+	opacity:1;
+}
+img[alt="新冠配图"]{
+	width:300px;
+	float:right;
+	box-shadow:1px 1px 5px 0px;
+	margin:10px;
+	border-radius:20px;
+}
+img[alt="新冠配图"]:hover{
+	width:320px;
+	margin:0px;
+}
+img[alt="新冠配图"]:active{
+	width:500px;
+}
+img[alt="新冠症状配图"]{
+	float: right;
+	width: 370px;
+	box-shadow:1px 1px 5px 0px;
+	margin:10px;
+	border-radius:20px;
+}
+img[alt="新冠症状配图"]:hover{
+	width:390px;
+	margin:0px;
+}
+img[alt="新冠症状配图"]:active{
+	width:500px;
+}
+fieldset{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:20px;
+	padding-right:20px;
+	border:3px dashed rgba(41, 41, 156, 0.7);
+	border-radius:10px;
+	background-color:rgba(0, 4, 248, 0.03);
+}
+legend{
+	font-size:30px;
+	font-family:"华光行楷_CNKI";
+}
+form{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#submitter-information,#submitter-state,#submitter-route-div{
+	width:77%;
+	margin-left:auto;
+	margin-right:auto;
+}
+input{
+	margin-top:20px;
+	margin-bottom:20px;
+	outline:none;
+	border:1px solid rgb(112, 64, 64);
+	border-radius:3px;
+}
+input:hover,input:active{
+	background-color:rgb(255, 255, 249);
+}
+input[type="text"]{
+	height:1.4em;
+}
+input[type="radio"]{
+	display:none;
+}
+input[type="radio"]+label{
+	font-family:华光准圆_CNKI;
+	font-weight:700;
+	font-size:16px;
+	display:inline-block;
+	margin-top:20px;
+	margin-bottom:3px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:5px 10px 5px;
+	background-color:rgba(94, 172, 255, 0.2);
+	border-radius:20px;
+}
+input[type="radio"]+label:hover{
+	padding:7px 12px 7px;
+	margin-top:17px;
+	margin-bottom:0px;
+	margin-left:7px;
+	margin-right:7px;
+	font-size:18px;
+	/* background-color:rgba(94, 172, 255, 0.7); */
+}
+input[type="radio"]+label:active{
+	font-size:14px;
+	padding:4px 9px 4px;
+	margin-top:22px;
+	margin-bottom:5px;
+	margin-left:12px;
+	margin-right:12px;
+}
+label[for="gender-male"]:hover{
+	background-color:rgba(0, 170, 255, 0.4);
+}
+#gender-male:checked+label{
+	background-color:rgba(0, 170, 255, 0.7);
+}
+label[for="gender-female"]:hover{
+	background-color:rgba(255, 85, 127, 0.4);
+}
+#gender-female:checked+label{
+	background-color:rgba(255, 85, 127, 0.7);
+}
+label[for="health-card-state-green"]:hover{
+	background-color:rgba(0, 170, 127, 0.4);
+}
+#health-card-state-green:checked+label{
+	background-color:rgba(0, 170, 127, 0.7);
+}
+label[for="health-card-state-yellow"]:hover{
+	background-color:rgba(255, 170, 0, 0.4);
+}
+#health-card-state-yellow:checked+label{
+	background-color:rgba(255, 170, 0, 0.7);
+}
+label[for="health-card-state-red"]:hover{
+	background-color:rgba(255, 0, 0, 0.4);
+}
+#health-card-state-red:checked+label{
+	background-color:rgba(255, 0, 0, 0.7);
+}
+label[for="pcr-state-danger"]:hover{
+	background-color:rgba(255, 0, 0, 0.4);
+}
+#pcr-state-danger:checked+label{
+	background-color:rgba(255, 0, 0, 0.7);
+}
+label[for="pcr-state-safe"]:hover{
+	background-color:rgba(0, 170, 127, 0.4);
+}
+#pcr-state-safe:checked+label{
+	background-color:rgba(0, 170, 127, 0.7);
+}
+label[for="pcr-term-12-hours"]:hover{
+	background-color:rgba(39, 190, 28, 0.4);
+}
+#pcr-term-12-hours:checked+label{
+	background-color:rgba(39, 190, 28, 0.7);
+}
+label[for="pcr-term-24-hours"]:hover{
+	background-color:rgba(152, 190, 28, 0.4);
+}
+#pcr-term-24-hours:checked+label{
+	background-color:rgba(152, 190, 28, 0.7);
+}
+label[for="pcr-term-48-hours"]:hover{
+	background-color:rgba(14, 149, 190, 0.4);
+}
+#pcr-term-48-hours:checked+label{
+	background-color:rgba(14, 149, 190, 0.7);
+}
+label[for="pcr-term-over-48-hours"]:hover{
+	background-color:rgba(190, 162, 47, 0.4);
+}
+#pcr-term-over-48-hours:checked+label{
+	background-color:rgba(190, 162, 47, 0.7);
+}
+label[for="submitter-health-danger"]:hover{
+	background-color:rgba(255, 0, 0, 0.4);
+}
+#submitter-health-danger:checked+label{
+	background-color:rgba(255, 0, 0, 0.7);
+}
+label[for="submitter-health-attention"]:hover{
+	background-color:rgba(255, 170, 0, 0.4);
+}
+#submitter-health-attention:checked+label{
+	background-color:rgba(255, 170, 0, 0.7);
+}
+label[for="submitter-health-safe"]:hover{
+	background-color:rgba(0, 170, 127, 0.4);
+}
+#submitter-health-safe:checked+label{
+	background-color:rgba(0, 170, 127, 0.7);
+}
+select{
+	outline:none;
+}
+#submitter-name{
+	width:7em;
+	margin-right:20px;
+	margin-bottom:0px;
+}
+#submitter-address{
+	width:20em;
+	margin-bottom:0px;
+}
+#submitter-id-number{
+	width:23em;
+	margin-bottom:0px;
+}
+#submitter-phone-number{
+	width:10em;
+}
+#submitter-contact-address{
+	width:15em;
+}
+input[name="gender"]{
+	margin-bottom:0px;
+}
+hr{
+	opacity:0.2;
+}
+textarea{
+	outline:none;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	height:10em;
+	margin-top:10px;
+	border:2px solid rgba(42, 72, 4, 0.5);
+	border-radius:5px;
+	background-color:rgb(255,255,255);
+}
+textarea:hover,textarea:active{
+	background-color:rgb(255, 255, 249);
+}
+#submitter-declare-truth-declare{
+	margin-left:8%;
+	margin-top:0px;
+}
+#submitter-declare-check-declare{
+	margin-top:0px;
+}
+input[type="submit"]{
+	font-size:20px;
+	font-family:华光中长宋_CNKI;
+	border:2px solid rgba(85, 170, 255, 0.7);
+	border-radius:15px;
+	background-color:rgba(0, 170, 255, 0.3);
+	width:60px;
+	height:30px;
+	margin-top:0px;
+	margin-left:25%;
+}
+input[type="reset"]{
+	font-size:20px;
+	font-family:华光中长宋_CNKI;
+	border:2px solid crgba(255, 170, 127, 0.7);
+	border-radius:15px;
+	background-color:rgba(255, 170, 0, 0.3);
+	width:60px;
+	height:30px;
+	margin-top:0px;
+	margin-left:25%;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+	background-color:rgba(170, 255, 255, 0.1);
+}

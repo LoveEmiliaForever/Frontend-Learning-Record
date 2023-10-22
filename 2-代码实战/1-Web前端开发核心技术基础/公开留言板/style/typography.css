@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 黑魔法;
+    src: url(../font/汉仪铸字黑魔法.ttf)format("truetype");
+}
+@font-face {
+    font-family: 铸字;
+    src: url(../font/汉仪铸字美心体简.ttf)format("truetype");
+}
+@font-face {
+    font-family: 窄体;
+    src: url(../font/后现代窄体3.ttf)format("truetype");
+}
+@font-face {
+    font-family: 圆体;
+    src: url(../font/文道和圆体.ttf)format("truetype");
+}
+h1,h2,h3{
+    font-weight: 500;
+}
+#header-top{
+    font-size: 100%;
+    font-family: 窄体;
+}
+#header-top >div:nth-of-type(2){
+    font-size: 110%;
+}
+#header-bottom > div:nth-of-type(1) h1{
+    font-size: 220%;
+    font-family: 圆体;
+    line-height: 1em;
+}
+#header-bottom > div:nth-of-type(1) p{
+    font-size: 80%;
+    font-family: 黑魔法;
+    text-align: center;
+}
+#header-bottom > div:nth-of-type(2){
+    font-family: 窄体;
+    font-size: 130%;
+}
+#header-bottom > div:nth-of-type(2) span{
+    font-weight: 900;
+}
+#newest-message h2{
+    font-weight: 500;
+    font-size: 150%;
+}
+#newest-message > div div h3{
+    font-size: 140%;
+    font-weight: 500;
+    font-family: 圆体;
+}
+#newest-message > div div p{
+    font-size: 110%;
+    font-family: 圆体;
+    letter-spacing: -0.05em;
+    text-indent: 1em;
+}
+#set-message-introducing{
+    text-shadow: -1px 1px #000;
+}
+#set-message-introducing h2,#set-message-introducing h3{
+    font-weight: 900;
+}
+#set-message-introducing h2{
+    font-size: 200%;
+    text-align: center;
+}
+#set-message-introducing h3{
+    font-size: 170%;
+    font-family: 圆体;
+}
+#set-message-introducing > div:nth-of-type(1) h2{
+    line-height: 350%;
+}
+#set-message-introducing > div > div p{
+    font-size: 320%;
+    font-family: 窄体;
+}
+#real-time-message > div > p{
+    font-family: 窄体;
+    text-align: center;
+}
+#real-time-message > div > div h3{
+    font-family: 圆体;
+    font-weight: 900;
+}
+#real-time-message > div > div p{
+    font-family: 圆体;
+    text-indent: 1em;
+}
+#message-edit form p:nth-of-type(3){
+    text-align: center;
+    text-shadow: 0px 1px #000;
+}
+#history-message > div > div{
+    font-family: 圆体;
+}
+#history-message > div > div p{
+    text-indent: 1em;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(1) p{
+    font-size: 150%;
+    font-family: 黑魔法;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(2) p{
+    font-size: 110%;
+    font-family: 圆体;
+}
+footer > div > div:nth-of-type(2) p{
+    font-size: 150%;
+    font-family: 铸字;
+}
+footer > div > div:nth-of-type(2) ul{
+    font-family: 圆体;
+    line-height: 2.5em;
+    list-style-type: none;
+}
+footer > div > div:nth-of-type(3) p{
+    font-family: 窄体;
+    text-align: center;
+    line-height: 2em;
+}

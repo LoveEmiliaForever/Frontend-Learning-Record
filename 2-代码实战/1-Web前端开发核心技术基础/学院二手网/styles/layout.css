@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width:78.1%;
+    margin: 0px auto;
+}
+header{
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > p:nth-of-type(1){
+    margin-top: 4.5vh;
+    margin-left: 5vw;
+}
+header > p:nth-of-type(1) > span{
+    margin-left: 19vw;
+}
+header > p:nth-of-type(2){
+    margin-top: 5vh;
+    padding: 1vh 2vh;
+    border: #000 solid 1px;
+    border-radius: 20px;
+}
+body > hr{
+    width:98.8vw;
+    position:relative;
+    left:-14.07%;
+    border-bottom: 0px;
+}
+main{
+    margin:0 5vh;
+}
+#search-block{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+#search-block > p{
+    margin-top: 3vh;
+}
+#search-block > p > span{
+    margin-left: 2.5vw;
+}
+#search-block > div:nth-of-type(1){
+    width:45%;
+    display: flex;
+    flex-direction: column;
+}
+#search-block > div:nth-of-type(1) > div{
+    display: flex;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(1){
+    padding: 1vh;
+    border: rgba(0, 0, 0, 0.29) solid 1px;
+    border-radius: 30px;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(1) input{
+    border: 0;
+    outline: 0;
+    padding:0 20px;
+    border-radius: 30px;
+    width:80%;
+    text-align: center;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(1) a{
+    padding: .5vh 1vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(1) a img{
+    width:70%;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(2){
+    justify-content: space-around;
+    margin-top: .5vh;
+}
+#search-block > div:nth-of-type(2){
+    border-radius: 20px;
+    padding: 1vh;
+    width:20%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-around;
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(1) img{
+    width:30%;
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(2){
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(2) a{
+    border-radius: 20px;
+    padding: 0px 10px 2px 10px;
+}
+#category-nav{
+    border-radius: 50px;
+    padding:2.5vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+#advertisement{
+    margin:5vh;
+    display: flex;
+    justify-content: space-around;
+}
+#advertisement > div:nth-of-type(1){
+    width: 25%;
+    border-radius: 20px;
+    background-image: url(../images/纸背景1.jpeg);
+    background-position: top center;
+}
+#advertisement > div:nth-of-type(1) > h2{
+    margin:2vh 0 0 0;
+}
+#advertisement > div:nth-of-type(1) > p{
+    margin:1vh 1vh;
+}
+#advertisement > div:nth-of-type(2){
+    width: 65%;
+    height: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#advertisement > div:nth-of-type(2) > div:nth-of-type(1) a{
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+}
+#advertisement > div:nth-of-type(2) > div:nth-of-type(1){
+    position: absolute;
+    top:106%;
+    left:58%;
+    width: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+#advertisement > div:nth-of-type(2) > div:nth-of-type(2){
+    display: flex;
+}
+#advertisement > div:nth-of-type(2) img{
+    width:100%;
+}
+#sell-edit{
+    display: none;
+    position: fixed;
+    top:40%;
+    left:40%;
+}
+#sell-edit > div:nth-of-type(1){
+    background-color: rgb(255, 255, 255);
+    padding:3vh;
+    display: flex;
+    flex-direction: column;
+}
+#sell-edit > div:nth-of-type(1) > div{
+    display: flex;
+    justify-content: space-around;
+}
+#sell-edit a:nth-child(1){
+    margin-top: 2vh;
+    padding: 0 2vh 1vh 2vh;
+    border-radius: 20px;
+}
+#sell-edit a:nth-child(2){
+    margin-top: 2vh;
+    padding: 0 2vh 1vh 2vh;
+    border-radius: 20px;
+}
+#grayBackground{
+    position: fixed;
+    top:0vh;
+    left:0vw;
+    z-index: -1;
+    width: 99.7vw;
+    height: 100vh;
+}
+#sell-block{
+    display: flex;
+    flex-direction: column;
+}
+#sell-block > div:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#sell-block > div:nth-of-type(1) p:nth-of-type(2){
+    align-self: flex-end;
+    margin-top:1vh;
+    margin-left:2vh;
+    padding:1vh 2vh;
+    border-radius: 20px;
+}
+#sell-block > div:nth-of-type(1) a{
+    padding:1vh 2vh;
+    border-radius: 20px;
+}
+#sell-block > div:nth-of-type(1) > div{
+    display: flex;
+}
+#sell-block > div:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#sell-block > div:nth-of-type(2) > div{
+    width:26%;
+    margin: 4vh 0;
+    padding: 2vh 1vh;
+    border: rgba(0, 0, 0, 0.441) solid 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#sell-block > div:nth-of-type(2) > div > img{
+    width:80%;
+    align-self: center;
+}
+#sell-block > div:nth-of-type(2) > div > a{
+    padding-right: 3vh;
+}
+footer{
+    margin-top: 5vh;
+    width:98.9vw;
+    position:relative;
+    left:-14.07%;
+}
+footer > div{
+    margin:0% 11%;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+footer > div >div{
+    width:30%;
+}
+footer > div > div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(2){
+    display: flex;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(2) > div{
+    margin: 7% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(2) >div:nth-of-type(2) >img{
+    width:125%;
+}
+footer > div > div:nth-of-type(2){
+    margin-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+}
+footer > div > div:nth-of-type(2) > div{
+    display: flex;
+    justify-content: space-around;
+}
+footer > div > div:nth-of-type(3) hr{
+    width:50%;
+}
+footer > div > div:nth-of-type(3) p{
+    width:50%;
+}

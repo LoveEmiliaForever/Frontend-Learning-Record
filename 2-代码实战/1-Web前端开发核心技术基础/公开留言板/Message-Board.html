@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="chinese">
+    <head>
+        <meta charset="utf-8">
+        <title>留言板</title>
+        <link href="./style/basic.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section id="header-top">
+                <div>
+                    <p>数据科学与大数据技术</p>
+                    <p>学号:xxxxxxxxxx</p>
+                    <p>站主名字</p>
+                </div>
+                <div>
+                    <p>这是我的留言板</p>
+                </div>
+            </section>
+            <section id="header-bottom">
+                <div>
+                    <img src="./images/board-sign.svg">
+                    <div>
+                        <h1>我的留言板</h1>
+                        <p>My Message Board</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>已有留言:</p>
+                        <span>8</span>
+                    </div>
+                    <div>
+                        <p>今日新增:</p>
+                        <span>0</span>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </header>
+        <main>
+            <section id="newest-message">
+                <h2>热门留言</h2>
+                <div>
+                    <div>
+                        <h3>数据结构</h3>
+                        <p>
+                            数据结构是计算机存储、组织数据的方式。
+                            数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。
+                        </p>
+                    </div>
+                    <div>
+                        <h3>算法导论</h3>
+                        <p>
+                            《算法导论》自第一版出版以来,已经成为世界范围内广泛使用的大学教材和专业人员的标准参考手册。 
+                        </p>
+                    </div>
+                    <div>
+                        <h3>计算机系统</h3>
+                        <p>计算机系统指用于数据库管理的计算机硬软件及网络系统。
+                            数据库系统需要大容量的主存以存放和运行操作系统等</p>
+                    </div>
+                    <div>
+                        <h3>离散数学</h3>
+                        <p>离散数学是研究离散量的结构及其相互关系的数学学科，是现代数学的一个重要分支。</p>
+                    </div>
+                    <div>
+                        <h3>JavaScriptf</h3>
+                        <p>JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。</p>
+                    </div>
+                </div>
+            </section>
+            <section id="set-message-introducing">
+                <div>
+                    <h2>留言步骤</h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/process1.svg">
+                        <p>01</p>
+                    </div>
+                    <h3>填写留言</h3>
+                    <p>将你想要留下的话输入至留言框</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/process2.svg">
+                        <p>02</p>
+                    </div>
+                    <h3>写下姓名</h3>
+                    <p>把你喜欢的网名放在姓名框内</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/process3.svg">
+                        <p>03</p>
+                    </div>
+                    <h3>点击留言</h3>
+                    <p>点击留言按钮就完成了留言</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/process4.svg">
+                        <p>04</p>
+                    </div>
+                    <h3>查看留言</h3>
+                    <p>完成留言后就可以在展示区看到你的留言了</p>
+                </div>
+            </section>
+            <section id="message-exhibition-block">
+                <div id="real-time-message">
+                    <h2>实时留言</h2>
+                    <div>
+                        <p>2022-12-2</p>
+                        <div>
+                            <h3>LoveEmiliaForever:</h3>
+                            <p>1.树深时见鹿，溪午不闻钟。——李白《访戴天山道士不遇》<br>
+                                2.听雨寒更彻，开门落叶深。——无可《秋寄从兄贾岛》<br>
+                                3.客子光阴诗卷里，杏花消息雨声中。——陈与义《怀天经智老因访之》</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>2022-12-2:</p>
+                        <div>
+                            <h3>Simple一单五:</h3>
+                            <p>歼20一般指歼-20。 歼-20（英文：Chengdu J-20，代号：威龙）
+                                是中航工业成都飞机设计研究所研制的一款具备高隐身性、高态势感知、
+                                高机动性等能力的隐形第五代制空战斗机</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>2022-12-2:</p>
+                        <div>
+                            <h3>逢坂大大大大大河:</h3>
+                            <p>《植物大战僵尸》是由美国宝开游戏公司(PopCap Games)开发的一款益智策略类塔防御战游戏，
+                                也是《植物大战僵尸》系列的第一部作品。于2009年5月5日发售。</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="wirte-message-block">
+                    <div id="message-edit">
+                        <h2>我也要留言</h2>
+                        <form action="">
+                            <p>你的名字</p>
+                            <input type="text" name="userName">
+                            <p>留言信息</p>
+                            <textarea name="messageInfo"></textarea>
+                            <p>写下留言</p>
+                        </form>
+                    </div>
+                    <div id="history-message">
+                        <hr>
+                        <h2>历史留言</h2>
+                        <div>
+                            <img src="./images/pre-sign.svg">
+                            <img src="./images/round.svg" class="round">
+                            <div>
+                                <h3>历史留言1</h3>
+                                <p>留言内容</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/pre-sign.svg">
+                            <img src="./images/round.svg" class="round">
+                            <div>
+                                <h3>历史留言2</h3>
+                                <p>留言内容</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/pre-sign.svg">
+                            <img src="./images/round.svg" class="round">
+                            <div>
+                                <h3>历史留言3</h3>
+                                <p>留言内容</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <div>
+                        <img src="./images/board-sign.svg">
+                        <p>扫码给我打钱</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./images/Alipay.svg">
+                            <p>支付宝转账</p>
+                        </div>
+                        <div>
+                            <img src="./images/WeChat.svg">
+                            <p>微信转账</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>期末我不要挂科</p>
+                    <div>
+                        <ul>
+                            <li>web前端</li>
+                            <li>机器学习</li>
+                            <li>数据可视化</li>
+                        </ul>
+                        <ul>
+                            <li>数据挖掘</li>
+                            <li>文本分析</li>
+                            <li>大数据思维</li>
+                        </ul>
+                        <ul>
+                            <li>区块链</li>
+                            <li>艺术导论</li>
+                            <li>大数据技术</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p>期末不挂科</p>
+                    <hr>
+                    <p>期末不挂科</p>
+                    <p>期末不挂科</p>
+                    <p>期末不挂科</p>
+                    <hr>
+                    <p>期末不挂科</p>
+                </div>
+            </div>
+        </footer>
+        <script src="./script/animation-function.js"></script>
+        <script src="./script/board-animation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+header > p:nth-of-type(2){
+	background-color: rgba(0, 0, 0, 0.133);
+}
+body > hr{
+	border-color: rgba(0, 0, 0, 0.144);
+}
+#search-block > p{
+	color:rgb(179, 25, 25)
+}
+#search-block > p > span{
+	color:rgb(203, 133, 4)
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(1) a{
+	background-color: rgb(0, 174, 255);
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(2){
+	color:rgb(216, 27, 27);
+}
+#search-block > div:nth-of-type(2){
+	background-color: rgba(0, 64, 255, 0.115);
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(2) a:nth-of-type(1){
+	background-color: rgb(230, 158, 3);
+	color:rgb(34, 34, 34);
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(2) a:nth-of-type(2){
+	background-color: rgb(0, 166, 255);
+	color:rgb(255, 255, 255);
+}
+#category-nav{
+	background-color: orange;
+	color: white;
+}
+#advertisement > div:nth-of-type(1){
+	background-color: rgb(151, 151, 151);
+}
+#advertisement > div:nth-of-type(2) > div:nth-of-type(1) a{
+	background-color: rgb(255, 255, 255);
+}
+#grayBackground{
+	background-color: rgba(0, 0, 0, 0.166);
+}
+#sell-edit a:nth-child(1){
+	background-color: rgba(17, 124, 33, 0.537);
+	color:white;
+}
+#sell-edit a:nth-child(2){
+	background-color: rgba(18, 91, 186, 0.608);
+	color:white;
+}
+#sell-block > div:nth-of-type(1) p:nth-of-type(2){
+	background-color: orange;
+}
+#sell-block > div:nth-of-type(1) a{
+	background-color: rgb(32, 150, 218);
+	color:white;
+}
+#sell-block > div:nth-of-type(2) > div > a{
+    background-color: coral;
+	color:rgb(25, 74, 123)
+}
+#sell-block > div:nth-of-type(2) > div > a span{
+	color:rgb(85, 45, 8);
+}
+footer {
+	background-color: rgba(0, 0, 0, 0.647);
+	color: white;
+}

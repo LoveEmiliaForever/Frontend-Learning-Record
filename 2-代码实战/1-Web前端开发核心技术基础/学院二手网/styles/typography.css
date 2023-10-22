@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 黑魔法;
+    src: url(../font/汉仪铸字黑魔法.ttf)format("truetype");
+}
+@font-face {
+    font-family: 铸字;
+    src: url(../font/汉仪铸字美心体简.ttf)format("truetype");
+}
+@font-face {
+    font-family: 窄体;
+    src: url(../font/后现代窄体3.ttf)format("truetype");
+}
+@font-face {
+    font-family: 圆体;
+    src: url(../font/文道和圆体.ttf)format("truetype");
+}
+header > p:nth-of-type(1){
+    font-family: 铸字;
+    font-size: 300%;
+    line-height: .7em;
+}
+header > p:nth-of-type(1) > span{
+    font-family: 圆体;
+    font-size: 50%;
+    line-height: 1em;
+}
+header > p:nth-of-type(2){
+    font-family: 铸字;
+    font-size: 150%;
+}
+header > p:nth-of-type(2) > span{
+    font-family: 窄体;
+    font-size: 100%;
+}
+#search-block > p{
+    font-family: 黑魔法;
+    font-size: 200%;
+    letter-spacing: .1em;
+    line-height: .9em;
+}
+#search-block > p > span{
+    font-family: 圆体;
+    font-size: 70%;
+    letter-spacing: 0;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(1) input{
+    font-size: 120%;
+}
+#search-block > div:nth-of-type(1) > div:nth-of-type(2){
+    letter-spacing: .3em;
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(1){
+    font-family: 圆体;
+    font-size: 140%;
+}
+#search-block > div:nth-of-type(2) > div:nth-of-type(2){
+    font-family: 圆体;
+    font-size: 120%;
+}
+#category-nav{
+    font-size: 120%;
+    font-weight: 900;
+    letter-spacing: .3em;
+}
+#advertisement > div:nth-of-type(1) > h2{
+    font-family: 黑魔法;
+    font-size: 190%;
+    font-weight: 500;
+    text-align: center;
+}
+#advertisement > div:nth-of-type(1) > p{
+    font-family: 圆体;
+    font-size: 150%;
+}
+#sell-edit{
+    font-family: 圆体;
+    font-size: 150%;
+}
+#sell-block > div:nth-of-type(1) p{
+    font-family: 铸字;
+}
+#sell-block > div:nth-of-type(1) p:nth-of-type(1){
+    font-size: 200%;
+}
+#sell-block > div:nth-of-type(1) p:nth-of-type(2){
+    font-size: 130%;
+}
+#sell-block > div:nth-of-type(1) a{
+    font-family: 黑魔法;
+    font-size: 140%;
+}
+#sell-block > div:nth-of-type(2) > div > p:nth-of-type(1){
+    font-family: 铸字;
+    font-size: 120%;
+}
+#sell-block > div:nth-of-type(2) > div > p:nth-of-type(2){
+    font-family: 圆体;
+    text-indent: 2em;
+}
+#sell-block > div:nth-of-type(2) > div > a{
+    font-family: 黑魔法;
+    text-align: right;
+}
+#sell-block > div:nth-of-type(2) > div > a span{
+    font-family: 黑魔法;
+    font-size: 120%;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(1) p{
+    font-size: 150%;
+    font-family: 黑魔法;
+}
+footer > div > div:nth-of-type(1) > div:nth-of-type(2) p{
+    font-size: 110%;
+    font-family: 圆体;
+}
+footer > div > div:nth-of-type(2) p{
+    font-size: 150%;
+    font-family: 铸字;
+}
+footer > div > div:nth-of-type(2) ul{
+    font-family: 圆体;
+    line-height: 2.5em;
+    list-style-type: none;
+}
+footer > div > div:nth-of-type(3) p{
+    font-family: 窄体;
+    text-align: center;
+    line-height: 2em;
+}

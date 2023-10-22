@@ -1,0 +1,9 @@
+function picShow(pic){
+	var pic_path=pic.getAttribute("href");
+	var placeholder=document.getElementsByClassName("Placeholder")[0];
+	placeholder.setAttribute("src",pic_path);
+	var text=pic.firstChild.nodeValue;
+	var description=document.getElementById("Pic-Description");
+	description.firstChild.nodeValue=text;
+}
+
