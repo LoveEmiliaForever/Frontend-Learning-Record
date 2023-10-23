@@ -26,7 +26,7 @@ export default createStore({
   },
   actions: {
     getSetSelectionList (context) {
-      axios.get('/selectionList.json').then((response) => {
+      axios.get('./selectionList.json').then((response) => {
         context.commit({
           type: 'setSelectionList',
           selectionListData: response.data
@@ -34,7 +34,7 @@ export default createStore({
       })
     },
     getSetNoteData (context, payload) {
-      axios.get('/noteData.json').then((response) => {
+      axios.get('./noteData.json').then((response) => {
         context.commit({
           type: 'setNoteData',
           noteData: response.data[payload.selectedSetName][payload.selectedNoteName]
