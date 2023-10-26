@@ -1,4 +1,4 @@
-# ![Alt text](5-散碎依赖文件/README-Header.png)  
+![Alt text](5-散碎依赖文件/README-Header.png)  
 
 这里将记录我学习的脚步，仓库和Git会记录我的成长  
 如果我的经历能够对后来者有所启发，这个仓库的建立就是有意义的  
